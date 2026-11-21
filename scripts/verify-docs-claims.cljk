@@ -29,7 +29,7 @@
 (def root (or (first (remove #(str/starts-with? % "--") *command-line-args*)) "."))
 
 (def claims
-  {:tracked-files 35
+  {:tracked-files 36
    :inherited-bytes 18535          ; 手を触れていない 12 ファイルの合計
    :svelte-artifacts 0             ; .svelte / svelte.config / svelte/ が 1 つも無い
    :sveltekit-compat-flags 0       ; nodejs_compat は adapter-cloudflare のものだった
